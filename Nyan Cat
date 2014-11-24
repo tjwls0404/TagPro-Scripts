@@ -43,12 +43,15 @@ tagpro.ready(function () {
     
     //Change this for when nyan cat music is played. atm only op 
     
-    soundcondition = "flag"
+    soundcondition = "flag";
     
     //"flag" to play sound when you grab the flag
     //"off" for off. I can't recommend this option more, especially if you are easily irritated
     
 //__________________END OPTIONS, CHANGE BELOW AT RISK OF CREATING INVISIBALLS OR SOME OTHER CRAZY SHIZZ___________________
+    
+        
+    spin_on = "on"
     
     var SpinType = {
         OFF: 0,
@@ -56,11 +59,16 @@ tagpro.ready(function () {
         OVERLAY: 2
     };    
     
+    if {spin_on == "on"){
+        var spinType = SpinType.1;
+       }else{
+        var spinType = SpinType.0;
+    
+    
     var showDropShadows = false;
     var showBallShine = false;
     var ballShineUrl = "http://i.imgur.com/YsZccQv.png";
     var centerFlair = false;
-    var spinType = SpinType.OFF;
     var spinOverlayUrl = "http://i.imgur.com/KtwiVqW.png";
     var particleFactor = 0.5;
     var showParticles = true;
